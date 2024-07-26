@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif; /*Fuentes clasicas*/
+                font-size: 12px ; /*Tamaño de la letra*/
+            }
+            input [type="text"],input [type="email"],select {
+                background: white; /* Fondo blanco */
+                height: 30px; /* Altura */
+                border-radius: 6px; /* Borde redondeado */
+                border: 1px solid #777; /* Borde gris */
+                margin-bottom: 15px; /*Margen inferior*/
+                    }
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+            label {
+                font-weight: bold; /*Negrita*/
+            }
+        </style>
+
+    </head>
+    <body>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre"/>
+
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" placeholder="Ingrese sus apellidos" />
+
+            <label for="email" >Email:</label>
+            <input for="email"id="email" placeholder="Ingrese sus correo" />
+
+            <label for="Productos">Seleccione Productos</label>
+            <select id="Productos" > 
+                <option value="1">Helado de Chocolate</option>
+                <option value="1">Helado de Fresa</option>
+                <option value="1">Helado de Vainilla</option>
+            </select>
+            <label for="mensaje">Extras para tu pedido</label>
+            <textarea id="mensaje"></textarea>
+
+            <label>Pago al contado <input type="radio" value="CONT" name="tipo_pago"></label>
+            <label>Pago con tarjeta <input type="radio" Value="Tar" name="tipo_pago"></label>
+        </form>
+    </body>
+</html>
